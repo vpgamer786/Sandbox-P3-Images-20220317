@@ -52,9 +52,6 @@ if ( heightPic2Larger == true ) imageHeightRatioPic2 = float (largerPic2Dimensio
 println(imageWidthRatioPic1, imageHeightRatioPic1, imageWidthRatioPic2, imageHeightRatioPic2); //Verify Variable Details (Ratios)
 //
 //
-//
-//
-//
 rectXPic1 = width*1/4;
 rectYPic1 = height*0;
 rectWidthPic1 = width*1/2;
@@ -70,11 +67,13 @@ pic1WidthAdjusted = rectWidthPic1 * imageWidthRatioPic1;
 pic1HeightAdjusted = rectHeightPic1 * imageHeightRatioPic1;
 pic2WidthAdjusted = rectWidthPic2 * imageWidthRatioPic2;
 pic2HeightAdjusted = rectHeightPic2 * imageHeightRatioPic2;
+println(pic1Width, pic1Height, pic2Width, pic2Height);
+println(pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted);
 //
 //Rectangle Layout & Image Printing on Canvas
 color red=#FF0000;
 fill(red);
-//rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
+rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
 rect(rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2); //Image 2, landscape presentation
 // Image using Rect() Variables
 //image(pic1, rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1);
